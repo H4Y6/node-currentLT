@@ -1,6 +1,6 @@
-const date = new Date();
-const today = date.toString().slice(0, 25);
-console.log(today);
+const getCurrentLT = require("./getCurrentLT");
+const getCurrentMonth = require("./getCurrentMonth");
 
-const currentMonth = date.getMonth() + 1;
-console.log(currentMonth);
+console.log(
+  `current LT: ${getCurrentLT()}, current month: ${getCurrentMonth()} `
+);
