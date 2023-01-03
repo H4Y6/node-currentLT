@@ -1,5 +1,5 @@
 const getCurrentMonth = () => {
-  const date = new Date().getMonth() + 11;
+  const date = new Date().getMonth();
   if (date === 0) {
     return "january";
   }
