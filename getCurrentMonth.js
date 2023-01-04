@@ -1,40 +1,42 @@
 const getCurrentMonth = () => {
-  const monthNumber = new Date().getMonth();
-  if (monthNumber === 0) {
-    return "january";
-  }
-  if (monthNumber === 1) {
-    return "february";
-  }
-  if (monthNumber === 2) {
-    return "march";
-  }
-  if (monthNumber === 3) {
-    return "april";
-  }
-  if (monthNumber === 4) {
-    return "may";
-  }
-  if (monthNumber === 5) {
-    return "june";
-  }
-  if (monthNumber === 6) {
-    return "july";
-  }
-  if (monthNumber === 7) {
-    return "august";
-  }
-  if (monthNumber === 8) {
-    return "september";
-  }
-  if (monthNumber === 9) {
-    return "october";
-  }
-  if (monthNumber === 10) {
-    return "november";
-  }
-  if (monthNumber === 11) {
-    return "december";
+  switch ((monthNumber = new Date().getMonth())) {
+    case 0:
+      return "January";
+      break;
+    case 1:
+      return "February";
+      break;
+    case 2:
+      return "March";
+      break;
+    case 3:
+      return "April";
+      break;
+    case 4:
+      return "May";
+      break;
+    case 5:
+      return "June";
+      break;
+    case 6:
+      return "July";
+      break;
+    case 7:
+      return "August";
+      break;
+    case 8:
+      return "september";
+      break;
+    case 9:
+      return "October";
+      break;
+    case 10:
+      return "November";
+      break;
+    case 11:
+      return "December";
+      break;
   }
 };
+
 module.exports = getCurrentMonth;
